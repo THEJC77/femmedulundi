@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Est-ce que tu m'aimes ? 💕</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ÉCRAN 1 : Page d'accueil -->
+  <div class="screen active" id="screen1">
+    <h1>Est-ce que tu m'aimes ? 🥺❤️</h1>
+    <button id="btn-love">Touche ici si tu m'aimes</button>
+  </div>
+
+  <!-- ÉCRAN 2 : Quiz -->
+  <div class="screen" id="screen2">
+    <h1>Prouve-le moi 😏</h1>
+
+    <div class="question">
+      <p>1. Quelle est ma couleur préférée ?</p>
+      <div class="options">
+        <label><input type="radio" name="q1" value="rouge"> Rouge</label>
+        <label><input type="radio" name="q1" value="bleu"> Bleu</label>
+        <label><input type="radio" name="q1" value="rien"> Rien</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>2. Quel jour est notre anniversaire ?</p>
+      <div class="options">
+        <label><input type="radio" name="q2" value="1"> 16 février</label>
+        <label><input type="radio" name="q2" value="2"> 13 Mai</label>
+        <label><input type="radio" name="q2" value="01novembre"> 01 Novembre</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>3. Combien de fois je t'ai dit "je t'aime" pour la première fois ?</p>
+      <div class="options">
+        <label><input type="radio" name="q3" value="un peu"> Un peu</label>
+        <label><input type="radio" name="q3" value="trois"> Trois</label>
+        <label><input type="radio" name="q3" value="infini"> Plus que tout ❤️</label>
+      </div>
+    </div>
+
+    <button id="btn-valider">Valider</button>
+    <p id="error-msg">Ahhh bb faut ma dire que tu as oblié ça hien ! 😉</p>
+  </div>
+
+  <!-- ÉCRAN 3 : Résultat -->
+  <div class="screen" id="screen3">
+    <div id="resultat">
+      <h1>Bravo, tu reussi mon test de coeur bisous ! 💖</h1>
+      <img src="image/toi.jpeg" alt="Animation surprise">
+      <img src="image/nous.jpeg" alt="Animation surprise">
+      <p style="margin-top:15px; color:#555;">(Remplace l'image par ta propre photo)</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
